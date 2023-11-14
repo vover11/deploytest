@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ваше веб-приложение</title>
+    <!-- Подключите скрипт Telegram WebApp -->
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+</head>
+<body>
+    <!-- Содержимое вашего веб-приложения -->
+    <h1>Добро пожаловать в наше веб-приложение</h1>
+    <!-- Другие элементы и функциональность вашего веб-приложения -->
+    
+    <!-- JavaScript-код вашего веб-приложения -->
+    <script>
+        var WebApp = window.Telegram.WebApp;
+
+        // Пример: приветствие пользователя
+        WebApp.showAlert(`Добро пожаловать, @${WebApp.WebAppUser.username}.`);
+    </script>
+</body>
+</html>
